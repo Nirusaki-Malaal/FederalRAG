@@ -1,4 +1,4 @@
-# ⚖️ Jeffrey Epstein Federal Records RAG Explorer
+# ⚖️ FederalRAG: Federal Court Records & Legal Archives RAG Explorer
 
 Welcome to the **Jeffrey Epstein Federal Records RAG Explorer**! This application is an advanced, high-performance legal search tool equipped with local semantic intelligence. It lets you ask natural-language questions and searches both **official Jeffrey Epstein federal court PDFs** (scanned FBI files, flight logs, court hearings, witness testimony) and **reputable internet sources** simultaneously to synthesize fully cited, structured answers.
 
@@ -19,10 +19,10 @@ It merely checks if the age-verification flag is present in the cookie payload!
 By discovering this server-side oversight, I engineered a highly elegant bypass: if you inject the header cookie `"justiceGovAgeVerified": "true"`, the media endpoint bypasses the verification gates completely, allowing instant, authenticated downloads of court files. This was a classic reverse-engineering marvel that saved the pipeline from relying on heavy browser-automation workarounds like Playwright or Selenium.
 
 ### 🧪 Educational Sandbox (`scripts/` folder)
-If you want to study the original research, raw experiments, and structural thinking that went into this discovery, you can check the [scripts](file:///mnt/files/Projects/Pending/JefferyEpsteinRag/scripts) folder:
-- **[fetchtoken.py](file:///mnt/files/Projects/Pending/JefferyEpsteinRag/scripts/fetchtoken.py)**: Original attempt utilizing a headless chromium browser (`playwright`) to fetch real cookies dynamically.
-- **[temp.py](file:///mnt/files/Projects/Pending/JefferyEpsteinRag/scripts/temp.py)**: Raw network exploration showing the first success of bypassing the cookie check by mocking age-verification payloads.
-- **[ocr.py](file:///mnt/files/Projects/Pending/JefferyEpsteinRag/scripts/ocr.py)**: Initial experiments testing text layout extraction and running tesseract scanning.
+If you want to study the original research, raw experiments, and structural thinking that went into this discovery, you can check the [scripts](scripts/) folder:
+- **[fetchtoken.py](scripts/fetchtoken.py)**: Original attempt utilizing a headless chromium browser (`playwright`) to fetch real cookies dynamically.
+- **[temp.py](scripts/temp.py)**: Raw network exploration showing the first success of bypassing the cookie check by mocking age-verification payloads.
+- **[ocr.py](scripts/ocr.py)**: Initial experiments testing text layout extraction and running tesseract scanning.
 
 This sandbox is preserved exactly as it was during research for anyone wishing to study the reverse-engineering process behind modern web pipelines.
 
@@ -30,7 +30,7 @@ This sandbox is preserved exactly as it was during research for anyone wishing t
 
 ## 📸 Visual Interface Guide
 
-To help you understand and get familiar with the system, here are the screenshots located in your [artifacts](file:///mnt/files/Projects/Pending/JefferyEpsteinRag/artifacts) folder:
+To help you understand and get familiar with the system, here are the screenshots located in your [artifacts](artifacts/) folder:
 
 ### 1. 🖥️ The Aero Glass Desktop
 When you launch the app, you will be greeted by a full-fledged classic Windows 7 desktop background.
@@ -87,7 +87,8 @@ Make sure you have the following installed on your machine:
 #### Step 1: Open the Directory
 Open your terminal in the project directory:
 ```bash
-cd /mnt/files/Projects/Pending/JefferyEpsteinRag
+git clone https://github.com/Nirusaki-Malaal/FederalRAG.git
+cd FederalRAG
 ```
 
 #### Step 2: Run the Installer Script
